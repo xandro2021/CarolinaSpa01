@@ -1,0 +1,48 @@
+#+title: Submodule: RealState
+
+* About
+This is submodule of my studying notes which were released as a public project in order to show it as part of a bigger portfolio, in this submodule I portrait the ninth website design I learned to create by following the tutorial in the CSS course made by the Mexican programmer and designer Juan Pablo De la torre Valdez in Udemy.
++ Course Name: CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos
+
+* Deployment
+[[https://xandro2021.github.io/RealState/][Github Pages Link]]
+
+* Interesting things learned in this Project
++ It was learned how to use Gulp to create the compiled CSS file from SASS automatically
++ It was learned how to use Gulp to create images .aviff and webp from heavier images extensions like .jpg and .png
++ It was reinforced the use of Flexbox and Grid Layouts to position every box element in the website
++ It was reinforced the used of grid layouts to work with images
++ It was also reinforced the manipulation of images through the different background properties
++ It was reinforced the used of gradients as background. It this case it was the background in header where the image is under a blue gradient.
++ It was learnt about some native SCSS mixins utilities to play with colors like lighten, darken, transparentize
++ it was reiforced the use of the different background properties to play with images depending of the mediaquery
++ It was the first project using the BEM methodology to write CSS instead of the classical one using Submodules
++ It was reinforced the mobile First strategy to start writing CSS.
++ It was reinforced the right used of the file structure to work using SASS methodology together with BEM
++ Smart use of mixins to easily create a grid-layout for different sizes
++ It was learnt how to create a pseudo-carrousel only with CSS (section lugares)
++ It was reiforced the use of a gradient as background together with an image in order to give a nice effect
++ Interesting use of the property aspect-ratio to keep the space for the background-image in the cards
++ Use gradient to darken the image so the white text in the cards are visible
++ USE OF FOR TO AVOID THE REPETITION OF SCSS CODE FOR THE IMAGES IN THE CARDS
+#+begin_src scss
+.propiedad {
+    background-color: v.$blanco;
+
+    &__imagen {
+        aspect-ratio: 10/6;
+        background-size: cover;
+    }
+
+    @for $i from 1 through 6 {
+        $imagen: "../img/propiedad_" + $i + ".jpg";
+
+        &:nth-child(#{$i}) &__imagen {
+            background-image: url($imagen);
+        }
+    }
+}
+#+end_src
+
++ Learn more about mixins by using a parameter with a condition to evaluate (if statement)
++ Learn about object-fit and object-position to easily set an imagen in a container without deforming when the aspect-ratio doesn't fit with the image and container
