@@ -10,3 +10,6 @@ This is submodule of my studying notes which were released as a public project i
 * Interesting things learned in this Project
 + it was learned an interesting trick about accessibility in the navbar menu
 + Translate property as an alternative to relative position to move the component a bit out of the flow. In the cards for example, if you remove the translate, the hover effect of the image will cover the text content of the card while increasing the size of the image.
++ Style an html table
++ Put a bit more of practice on the creation and use of mixins
++ Remind the effect of using images with gradients and grid containers to give the division effect in the horarios section
