@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
@@ -56,11 +57,17 @@
         </div>
     </div>
 
-    <section class="slider">
+    <section class="slider contenedor">
         <ul class="slider__contenedor">
-            <div class="slider__slide">
-                <img src="build/img/slide_03.jpg" alt="imagen slide" />
-            </div>
+            <li class="slider__slide">
+                <img class="slider__imagen" src="build/img/slide_01.jpg" alt="imagen slide" />
+            </li>
+            <li class="slider__slide">
+                <img class="slider__imagen" src="build/img/slide_02.jpg" alt="imagen slide" />
+            </li>
+            <li class="slider__slide">
+                <img class="slider__imagen" src="build/img/slide_03.jpg" alt="imagen slide" />
+            </li>
         </ul>
     </section>
 
@@ -293,6 +300,8 @@
         </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
